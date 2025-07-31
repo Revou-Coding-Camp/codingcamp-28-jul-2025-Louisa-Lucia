@@ -3,9 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MiniProject Lucia</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="style.css">    
 </head>
 <body>
+    <!-- Header Content-->
+    <header class="header">
+        <!-- Logo Product-->
+        <div class="logo">
+            <img src="img/logo-part2.jpg" height="100px" width="100px" alt="Logo">
+        </div>
+        <!-- Navigation Menu, must on the right side of the looogo-->
+        <nav class="nav">
+            <ul>
+                <a class="border rounded-md p-1 text-purple-600" href="#">Home</a>
+                <a class="border rounded-md p-1 text-purple-600" href="#">About</a>
+                <a class="border rounded-md p-1 text-purple-600" href="#">Services</a>
+                <a class="border rounded-md p-1 text-purple-600" href="#">Contact Us</a>
+            </ul>
+        </nav>
+        <h1>MiniProject Lucia</h1>
+    </header>
     
+    <hr />
+
+    <!-- Main Content-->
+    <main>
+        <!-- Home Section 1-->
+        <section class="Home">
+            <h2>Out of Sight, out of Mind</h2>
+            <p>FreeDive and ScubaDive</p>
+            <div class="img">
+                <img src="img/Freediving-vs-Scuba-Diving.png" height="1000px" width="900px" alt="Home">
+            </div>
+        </section>
+        
+    <hr />
+        <!-- Our Product Section-->
+        <section class="About">
+            <h2>Out of Sight, out of Mind</h2>
+            <p>FreeDive and ScubaDive</p>
+            <div class="img">
+                <img src="img/Freediving-and-Scuba-diving-1024x538.jpg" height="1000px" width="900px" alt="Home">
+            </div>
+        </section>
+
+        <hr />
+        <!-- Portfolio Section-->
+        <section class="Services">
+            <h2>Out of Sight, out of Mind</h2>
+            <p>FreeDive and ScubaDive</p>
+            <div class="img">
+                <img src="img/Freediving-vs-Scuba-Diving.png" height="1000px" width="900px" alt="Home">
+            </div>
+        </section>
+
+        <hr />
+        <!-- Message US Section-->
+        <section class="Contact">
+            <h2>Out of Sight, out of Mind</h2>
+            <p>FreeDive and ScubaDive</p>
+            <br>
+            <div class="flex">
+                <form>
+                    <div>
+                      <label for="fname">First name:</label>
+                      <input type="text" id="fname" name="fname" value="John">
+                    </div>
+                    <div>
+                      <label for="lname">Last name:</label>
+                      <input type="text" id="lname" name="lname" value="Doe">
+                    </div>
+                    <div>
+                      <label for="country">Country:</label>
+                      <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                      </select>
+                    </div>
+                    <div>
+                      <input type="submit" value="Submit">
+                    </div>
+                  </form>
+
+                  <aside>
+                    <p id="result-form" class="border result-form p-10">Aside Content</p>
+                  </aside>
+            </div>
+        </section>
+    </main>
+    <hr />
+    <!-- Footer Content-->
+    <footer>
+        <p>Copyright &copy; 2025 LoLu_cia</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
+
 </html>
