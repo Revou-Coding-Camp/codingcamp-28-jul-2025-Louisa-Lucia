@@ -1,109 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiniProject Lucia</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <link rel="stylesheet" href="style.css">    
-</head>
-<body>
-    <!-- Header Content-->
-    <header class="header">
-        <!-- Logo Product-->
-        <div class="logo">
-            <img src="img/logo-part2.jpg" height="100px" width="100px" alt="Logo">
-        </div>
-        <!-- Navigation Menu, must on the right side of the looogo-->
-        <nav class="nav">
-            <ul>
-                <a class="border rounded-md p-1 text-purple-600" href="#">Home</a>
-                <a class="border rounded-md p-1 text-purple-600" href="#">About</a>
-                <a class="border rounded-md p-1 text-purple-600" href="#">Services</a>
-                <a class="border rounded-md p-1 text-purple-600" href="#">Contact Us</a>
-            </ul>
-        </nav>
-        <h1>MiniProject Lucia</h1>
-    </header>
-    
-    <hr />
-
-    <!-- Main Content-->
-    <main>
-        <!-- Home Section 1-->
-        <section class="Home">
-            <h2>Out of Sight, out of Mind</h2>
-            <p>FreeDive and ScubaDive</p>
-            <div class="img">
-                <img src="img/Freediving-vs-Scuba-Diving.png" height="1000px" width="900px" alt="Home">
-            </div>
-        </section>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MiniProject Lucia</title>
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
         
-    <hr />
-        <!-- Our Product Section-->
-        <section class="About">
-            <h2>Out of Sight, out of Mind</h2>
-            <p>FreeDive and ScubaDive</p>
-            <div class="img">
-                <img src="img/Freediving-and-Scuba-diving-1024x538.jpg" height="1000px" width="900px" alt="Home">
-            </div>
-        </section>
+        <link rel="stylesheet" href="style.css">    
+    </head>
 
+    <body class="bg-gray/50 text-grey-800 font-sans leading-relaxed">
+        <!-- Header Content-->
+        <header class="bg-gray-900 shadow-md fixed w-full z-10">
+            <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+                <!-- Logo Product-->
+                <div class="logo">
+                    <img src="img/logo-part2.jpg"  class="h-14 w-14 rounded-full border-2 border-sky-500" alt="Logo">
+                </div>
+                <!-- Navigation Menu, must on the right side of the looogo-->
+                <nav class="space-x-4 text-white font-medium">
+                    <a class="transition border rounded-md p-1" href="#home" class="hover:text-white-500">Home</a>
+                    <a class="transition border rounded-md p-1" href="#about" class="hover:text-blue-500">About</a>
+                    <a class="transition border rounded-md p-1" href="#services" class="hover:text-blue-500">Services</a>
+                    <a class="transition border rounded-md p-1" href="#contact" class="hover:text-blue-500">Contact Us</a>
+                </nav>
+            </div>
+        </header>
+        
         <hr />
-        <!-- Portfolio Section-->
-        <section class="Services">
-            <h2>Out of Sight, out of Mind</h2>
-            <p>FreeDive and ScubaDive</p>
-            <div class="img">
-                <img src="img/Freediving-vs-Scuba-Diving.png" height="1000px" width="900px" alt="Home">
-            </div>
-        </section>
 
-        <hr />
-        <!-- Message US Section-->
-        <section class="Contact">
-            <h2>Out of Sight, out of Mind</h2>
-            <p>FreeDive and ScubaDive</p>
-            <br>
-            <div class="flex">
-                <form>
-                    <div>
-                      <label for="fname">First name:</label>
-                      <input type="text" id="fname" name="fname" value="John">
-                    </div>
-                    <div>
-                      <label for="lname">Last name:</label>
-                      <input type="text" id="lname" name="lname" value="Doe">
-                    </div>
-                    <div>
-                      <label for="country">Country:</label>
-                      <select id="country" name="country">
-                        <option value="australia">Australia</option>
-                        <option value="canada">Canada</option>
-                        <option value="usa">USA</option>
-                      </select>
-                    </div>
-                    <div>
-                      <input type="submit" value="Submit">
-                    </div>
-                  </form>
+        <!-- Main Content-->
+        <main>
+            <!-- Home Section 1-->
+            <section id="home" class="relative h-screen bg-cover bg-center flex items-center justify-center ... scroll-mt-24"
+                style="background-image: url('img/wave-wallpaper.jpg'); margin-top: 10px; ">
+                
+                <div class="bg-black/50 p-10 rounded-lg text-center">
+                    <h1 class="text-white text-4xl md:text-6xl font-bold tracking-wide">Dive into Freedom</h1>
+                    <p class="mt-4 text-sky-200 text-lg">Explore the beauty of the deep blue with us</p>
+                </div>
 
-                  <aside>
-                    <p id="result-form" class="border result-form p-10">Aside Content</p>
-                  </aside>
-            </div>
-        </section>
-    </main>
-    <hr />
-    <!-- Footer Content-->
-    <footer>
-        <p>Copyright &copy; 2025 LoLu_cia</p>
-    </footer>
+            </section>
+            
+            <hr />
+            <!-- Our Product Section-->
+            <section id="about" class="max-w-4xl mx-auto py-16 px-6 text-center ... scroll-mt-24">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-sky-700">Our Story</h2>
+                <p class="text-gray-600 text-lg">
+                    Founded in 2025 in East Java, LenLenDelulu is your gateway to oceanic exploration—bringing scuba and freediving closer to your heart.
+                </p>
+                <a href="#contact" class="mt-8 inline-block bg-sky-600 text-white px-6 py-3 rounded-lg shadow hover:bg-sky-700 transition">
+                    Join the Dive 👋
+                </a>
+            </section>
+            <hr />
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-</body>
+            <!-- Portfolio Section-->
+            <section class="relative bg-gradient-to-br from-sky-900 via-blue-800 to-blue-900 py-16 text-white">
+                <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center"></div>
+                    <div class="relative max-w-4xl mx-auto text-center px-6">
+                        <div class="bg-white/10 backdrop-blur-md rounded-xl shadow-lg p-8 border border-white/20">
+                            <h2 class="text-3xl md:text-4xl font-bold text-sky-300">More Than a Dive Provider</h2>
+                            <p class="mt-4 text-gray-100 text-lg">
+                                Our mission goes beyond diving — we aim to deliver life-changing underwater experiences and create meaningful community connections.
+                            </p>
+                        </div>
+                    </div>
+            </section>
+
+            <!-- Destination Spots Section -->
+            <section id="services" class="bg-sky-100 py-16 ... scroll-mt-24">
+                <div class="max-w-6xl mx-auto px-6 text-center">
+                    <h2 class="text-3xl font-bold text-sky-800 mb-4">Top Freedive & Scuba Spots in Indonesia</h2>
+                    <p class="text-gray-600 mb-10">Come with us to Explore Indonesia’s most breathtaking underwater destinations.</p>
+
+                    <div class="grid gap-10 grid-cols-1 md:grid-cols-3">
+                        <!-- Spot 1 -->
+                        <div class="flex flex-col items-center">
+                            <a href="https://www.tripadvisor.com/Attraction_Review-g1137814-d2663460-Reviews-Tulamben_Diving-Tulamben_Bali.html" target="_blank">
+                                <img src="img/tulamben.jpg" alt="Tulamben" class="w-52 h-52 object-cover rounded-full shadow-3xl transition-transform duration-300 hover:scale-105" />
+                            </a>
+                            <h3 class="mt-4 font-semibold text-lg text-sky-700">Tulamben, Bali</h3>
+                            <p class="text-gray-500 text-sm">Wreck dive of USAT Liberty – perfect for beginners and photographers.</p>
+                        </div>
+
+                        <!-- Spot 2 -->
+                        <div class="flex flex-col items-center">
+                            <a href="https://www.divingindonesia.com/raja-ampat/" target="_blank">
+                                <img src="img/rajaampat.jpg" alt="Raja Ampat" class="w-52 h-52 object-cover rounded-full shadow-3xl transition-transform duration-300 hover:scale-105" />
+                            </a>
+                            <h3 class="mt-4 font-semibold text-lg text-sky-700">Raja Ampat, Papua</h3>
+                            <p class="text-gray-500 text-sm">One of the world’s richest marine biodiversity hotspots.</p>
+                        </div>
+
+                        <!-- Spot 3 -->
+                        <div class="flex flex-col items-center">
+                            <a href="https://www.scubajunkie.com/komodo/" target="_blank">
+                                <img src="img/komodo.jpg" alt="Komodo" class="w-52 h-52 object-cover rounded-full shadow-3xl transition-transform duration-300 hover:scale-105" />
+                            </a>
+                            <h3 class="mt-4 font-semibold text-lg text-sky-700">Komodo Island</h3>
+                            <p class="text-gray-500 text-sm">Strong currents and manta rays — a diver's ultimate playground.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <hr />
+            <!-- Message US Section-->
+            <section id="contact" class="py-16 bg-white ... scroll-mt-24">
+                <div class="max-w-4xl mx-auto px-6">
+                    <h2 class="text-3xl font-bold text-center text-sky-700 mb-6">Contact Us</h2>
+                    <p class="text-center text-gray-600 mb-10">Out of Sight, Out of Mind. Dive in with us!</p>
+
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <form id="contact-form" class="flex-1 space-y-4">
+                            <div>
+                                <label for="fname" class="block font-medium">First Name</label>
+                                <input type="text" id="fname" name="fname" class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-sky-500" />
+                            </div>
+                            <div>
+                                <label for="lname" class="block font-medium">Last Name</label>
+                                <input type="text" id="lname" name="lname" class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-sky-500" />
+                            </div>
+                            <div>
+                                <label for="country" class="block font-medium">Country</label>
+                                <select id="country" name="country" class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-sky-500">
+                                <option value="australia">Australia</option>
+                                <option value="canada">Japan</option>
+                                <option value="usa">Finland</option>
+                                </select>
+                            </div>
+                            <div>
+                                <button type="submit" class="bg-sky-600 text-white px-6 py-2 rounded hover:bg-sky-700">Submit</button>
+                            </div>
+                        </form>
+
+                        <aside class="flex-1 bg-sky-50 p-6 border border-dashed rounded-lg">
+                            <p id="result-form" class="text-sky-700">We’d love to hear from you. Fill out the form and join our ocean fam!</p>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+        </main>
+            <hr />
+        <!-- Footer Content-->
+        <footer class="bg-gray-900 text-gray-400 text-center py-6 mt-16">
+            <p>&copy; <span id="year"></span> Lolu-Cia. All Rights Reserved.</p>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="js/script.js"></script>
+        <script>
+            //set current year in footer
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </body>
 
 </html>

@@ -1,0 +1,17 @@
+/* css/style.css */
+
+body {
+    scroll-behavior: smooth;
+}
+
+.shadow-3xl {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#services {
+    margin-top: 100px;
+}
