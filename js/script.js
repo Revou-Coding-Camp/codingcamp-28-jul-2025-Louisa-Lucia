@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', function(event) {
         event.preventDefault(); //mencegah reload form
         //To get current Time
-        const CurrentTime = new Date().toLocaleString;
+        const CurrentTime = new Date().toLocaleString();
         
         //to show input data user
         const UserName = document.getElementById('fname').value;
