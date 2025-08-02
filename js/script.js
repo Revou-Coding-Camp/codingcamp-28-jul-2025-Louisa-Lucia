@@ -4,28 +4,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.addEventListener('submit', function(event) {
         event.preventDefault(); //mencegah reload form
+        //To get current Time
+        const CurrentTime = new Date().toLocaleString;
+        //to show input data user
+        const UserName = document.getElementById('fname').value;
+        const BornDate = document.getElementById('ldate').value;
+        const Gender = document.getElementById('gender').value;
+        const UserMassage = document.getElementById('message').value;
 
-        const firstName = document.getElementById('fname').value;
-        const lastName = document.getElementById('lname').value;
-        const country = document.getElementById('country').value;
-
-        if (firstName && lastName && country) {
+        if (UserName && BornDate && Gender && UserMassage) {
             result.innerHTML = `
             <div class="space-y-2">
+                <p><strong>Current time :</strong> ${CurrentTime}</p>
                 <p>
                     <strong>
                         First Name:
-                    </strong> ${firstName}
+                    </strong> ${UserName}
                 </p>
                 <p>
                     <strong>
-                        Last Name:
-                    </strong> ${lastName}
+                        Date Birth:
+                    </strong> ${BornDate}
                 </p>
                 <p>
                     <strong>
-                        Country:
-                    </strong> ${country}
+                        Gender:
+                    </strong> ${Gender}
+                </p>
+                <p>
+                    <strong>
+                        Message to US:
+                    </strong> ${UserMassage}
                 </p>
             </div>
             `;
