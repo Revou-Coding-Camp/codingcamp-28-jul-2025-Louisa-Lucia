@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault(); //mencegah reload form
         //To get current Time
         const CurrentTime = new Date().toLocaleString;
+        
         //to show input data user
         const UserName = document.getElementById('fname').value;
         const BornDate = document.getElementById('ldate').value;

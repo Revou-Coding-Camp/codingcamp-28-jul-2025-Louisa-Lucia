@@ -7,7 +7,27 @@
         <!-- Tailwind CSS -->
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <script src="https://cdn.tailwindcss.com"></script>
-        
+        <!-- Konfigurasi tailwind custom (opsional) -->
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                    colors: {
+                        sky: {
+                        700: '#0369a1',
+                        600: '#0284c7',
+                        500: '#0ea5e9',
+                        100: '#e0f2fe',
+                        50: '#f0f9ff',
+                        },
+                    },
+                    },
+                },
+            };
+        </script>
+        <!-- file CSS tambahan -->
+        <link href="css/style.css" rel="stylesheet">
+
         <link rel="stylesheet" href="style.css">    
     </head>
 
@@ -21,10 +41,10 @@
                 </div>
                 <!-- Navigation Menu, must on the right side of the looogo-->
                 <nav class="space-x-4 text-white font-medium">
-                    <a class="transition border rounded-md p-1" href="#home" class="hover:text-white-500">Home</a>
-                    <a class="transition border rounded-md p-1" href="#about" class="hover:text-blue-500">About</a>
-                    <a class="transition border rounded-md p-1" href="#services" class="hover:text-blue-500">Services</a>
-                    <a class="transition border rounded-md p-1" href="#contact" class="hover:text-blue-500">Contact Us</a>
+                    <a class="nav-link" href="#home" >Home</a>
+                    <a class="nav-link" href="#about" >About</a>
+                    <a class="nav-link" href="#services" >Services</a>
+                    <a class="nav-link" href="#contact" >Contact Us</a>
                 </nav>
             </div>
         </header>
@@ -109,56 +129,43 @@
 
 
             <hr />
-            <!-- Message US Section-->
+            <!-- Message US Section -->
             <section id="contact" class="section-contact">
-                <div class="section-container">
-                    <h2 class="section-title">Contact Us</h2>
-                    <p class="section-subtitle">Out of Sight, Out of Mind. Dive in with us!</p>
+                <div class="max-w-2xl mx-auto bg-sky-50 p-6 rounded-lg shadow space-y-6">
+                    <h2 class="text-2xl font-bold text-sky-700">Contact Us</h2>
 
-                    <div class="form-wrapper">
-                    <form id="contact-form" class="contact-form">
+                    <form id="contact-form" class="space-y-4">
                         <div>
-                            <label for="fname" class="input-label">Name</label>
-                            <input type="text" id="fname" name="fname" class="input-field" />
+                            <label class="block font-medium mb-1" for="fname">First Name</label>
+                            <input type="text" id="fname" class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-sky-500">
                         </div>
 
                         <div>
-                            <label for="ldate" class="input-label">Born of Date</label>
-                            <input type="date" id="ldate" name="ldate" class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-sky-500" value="<?= htmlspecialchars($ldate) ?>" required />
-                        </div>
-
-                        <div class="grid grid-cols-3 items-center gap-2"> 
-                            <label for="gender" class="input-label">Gender :</label>
-                            <div class="flex gap-4">
-                                <label class="ribbon-option">
-                                <input type="radio" name="gender" value="male" class="hidden peer" />
-                                <div class="ribbon-box peer-checked:bg-blue-500">Laki-laki</div>
-                                </label>
-                                <label class="ribbon-option">
-                                <input type="radio" name="gender" value="female" class="hidden peer" />
-                                <div class="ribbon-box peer-checked:bg-pink-500">Perempuan</div>
-                                </label>
-                            </div>  
-                        </div>
-
-                        <div class="grid grid-cols-3 items-start gap-2">
-                            <label for="message" class="label-text col-span-1 font-medium">Message</label>
-                            <textarea id="message" name="message" placeholder="Your Message" class="custom-textarea col-span-1 h-24 resize-none"></textarea>
+                            <label class="block font-medium mb-1" for="ldate">Date of Birth</label>
+                            <input type="date" id="ldate" class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-sky-500">
                         </div>
 
                         <div>
-                            <button type="submit" class="submit-button">Submit</button>
+                            <label class="block font-medium mb-1" for="gender">Gender</label>
+                            <select id="gender" class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-sky-500">
+                            <option value="">Select Gender</option>
+                            <option value="Laki - Laki">Laki - Laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                            </select>
                         </div>
+
+                        <div>
+                            <label class="block font-medium mb-1" for="message">Message</label>
+                            <textarea id="message" rows="3" class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-sky-500"></textarea>
+                        </div>
+
+                        <button type="submit" class="bg-sky-600 text-white px-6 py-2 rounded hover:bg-sky-700">Submit</button>
                     </form>
 
-                    <aside class="result-aside">
-                        <p id="result-form" class="result-text">
-                        We’d love to hear from you. Fill out the form and join our ocean fam!
-                        </p>
-                    </aside>
-                    </div>
+                    <div id="result-form" class="text-sky-700 pt-4"></div>
                 </div>
             </section>
+
 
         </main>
             <hr />
